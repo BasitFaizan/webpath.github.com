@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web path</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/all.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <nav>
+    <ul id="menuItems">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Our courses</a></li>
+      <li><a href="Contact.html">contact us</a></li>
+      <a href="Login.html" class="btn" type="submit">Login</a>
+      <a href="Sign.html" class="btn" type="submit">Sign up</a>
+    </ul>
+    <div class="navbar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="homeSection">
+    <div class="animation">
+      <span>W</span>
+      <span>E</span>
+      <span>L</span>
+      <span>C</span>
+      <span>O</span>
+      <span>M</span>
+      <span>E</span>
+      <span>T</span>
+      <span>O</span>
+      <span>M</span>
+      <span>Y</span>
+      <span>C</span>
+      <span>H</span>
+      <span>A</span>
+      <span>N</span>
+      <span>N</span>
+      <span>E</span>
+      <span>L</span>
+    </div>
+    <div class="buttonHover">
+      <button title="Explore more &raquo;" class="button" id="btns" type="submit"></button>
+    </div>
+  </div>
+  <div class="Games">
+    <h1>our Games</h1>
+    <div class="gameCharacters">
+      <img src="Raged_Barbarian_info.png" width="40%" />
+      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo </p>
+    </div>
+    <div class="gameCharacters">
+      <img src="Raged_Barbarian_info.png" width="40%" />
+      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo </p>
+    </div>
+    <div class="gameCharacters">
+      <img src="Raged_Barbarian_info.png" width="40%" />
+      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo </p>
+    </div>
+    <div class="gameCharacters">
+      <img src="Raged_Barbarian_info.png" width="40%" />
+      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo </p>
+    </div>
+    <div class="gameCharacters">
+      <img src="Raged_Barbarian_info.png" width="40%" />
+      <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo </p>
+    </div>
+  </div>
+  <div class="footer">
+    <h2>© copyright is reserved for web path</h2>
+  </div>
+  <script>
+    let menu = document.querySelector('#menuItems');
+    let nav = document.querySelector('.navbar');
+    let btn = document.getElementById('btns');
+    btn.style.transform = 'translateX(0px)';
+    nav.addEventListener('click', function() {
+      nav.classList.toggle('navActive');
+      menu.classList.toggle('active');
+      if (btn.style.transform == 'translateX(0px)') {
+        btn.style.transform = 'translateX(-500px)';
+      }
+      else {
+        btn.style.transform = 'translateX(0px)';
+      }
+    });
+  </script>
+</body>
+
+</html>

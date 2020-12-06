@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="Sign.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all" />
+</head>
+
+<body>
+  <nav>
+    <ul id="menuItems">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Our courses</a></li>
+      <li><a href="Contact.html">contact us</a></li>
+      <a href="Login.html" class="btn" type="submit">Login</a>
+      <a href="Sign.html" class="btn" type="submit">Sign up</a>
+    </ul>
+    <div class="navbar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="center">
+    <div class="body">
+      <h1>Sign up please</h1>
+      <form id="form" action="" method="get" accept-charset="utf-8">
+        <div class="formControl">
+          <label class="username">Username</label>
+          <input  type="text" name="" id="username" placeholder="Enter username"/>
+          <i class="fas fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>error msg</small>
+        </div>
+        <div class="formControl">
+          <label>Email</label>
+          <input autocomplete="off"  type="email" name="" id="email" placeholder="Enter your email id"/>
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>error msg</small>
+        </div>
+        <div class="formControl">
+          <label>phone number</label>
+          <input  type="number" name="" id="number" placeholder="Enter your number" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>error msg</small>
+        </div>
+        <div class="formControl">
+          <label>password</label>
+          <input  type="password" name="" id="password" placeholder="Enter password" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>error msg</small>
+        </div>
+        <div class="formControl">
+          <label>Again password</label>
+          <input  type="password" name="" id="cpassword" placeholder="Enter password again" />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>error msg</small>
+        </div>
+        <button type="submit">Sign up</button>
+      </form>
+    </div>
+  </div>
+  <script src="Sign.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

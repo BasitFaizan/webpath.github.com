@@ -1,0 +1,92 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    font-size: 62.5%;
+    overflow: hidden;
+  }
+  .center{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#240D3E,#060606);
+    display: grid;
+    place-items: center;
+  }
+  form{
+    width: 70rem;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1D1D1D;
+    box-shadow: 0 0 1rem black;
+    border-radius: 3rem;
+    box-shadow: 0 0 10px 0 rgba(255, 225, 225, 0.5);
+  }
+  .formControl{
+    position: relative;
+    margin-bottom: 5rem;
+ }
+ .formControl input{
+   width: 44rem;
+   height: 9rem;
+   background: transparent;
+   outline: none;
+   border: none;
+   border-bottom: .2rem solid white;
+   padding-top: 2.3rem;
+   color: white;
+   font-size: 3.3rem;
+ }
+ .formControl label{
+   position: absolute;
+   bottom: 1rem;
+   left: 1rem;
+   color: white;
+   font-size: 4rem;
+   transition: 0.5s;
+ }
+ .formControl input:focus ~ label,
+  .formControl input:valid ~ label{
+   transform: translateY(-5rem);
+   font-size: 2rem;
+   color: #00ABFF;
+ }
+ .formControl input:focus,
+  .formControl input:valid{
+    border-bottom: .2rem solid #00ABFF;
+  }
+ .formControl input:valid{
+   background: transparent;
+ }
+ .center form button{
+   width: 30rem;
+   height: 7rem;
+   background: #0495FF;
+   border: none;
+   outline: none;
+   color: white;
+   font-size: 3.4rem;
+   border-radius: 2rem;
+ }
+ 
+ 
+ 
+ 
+ @media screen and (max-width: 800px) {
+   html {
+     font-size: 40%;
+   }
+ }
+ 
+  @media screen and (max-width: 760px) {
+    html {
+      font-size: 35.5%;
+    }
+    form{
+      width: 60rem;
+    }
+  }

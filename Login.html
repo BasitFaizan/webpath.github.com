@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+<body>
+  <nav>
+    <ul id="menuItems">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Our courses</a></li>
+      <li><a href="Contact.html">contact us</a></li>
+      <a href="Login.html" class="btn" type="submit">Login</a>
+      <a href="Sign.html" class="btn" type="submit">Sign up</a>
+    </ul>
+    <div class="navbar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <div class="center">
+    <form action="" method="get" accept-charset="utf-8">
+      <div class="formControl">
+        <input required type="email" name="" id="email"/>
+        <label>Email</label>
+      </div>
+      <div class="formControl">
+        <input required type="password" name="" id="password"/>
+        <label>Password</label>
+      </div>
+      <button type="submit">Login now &raquo;</button>
+    </form>
+  </div>
+  <script>
+    let menu = document.querySelector('#menuItems');
+    let nav = document.querySelector('.navbar');
+    nav.addEventListener('click', function() {
+      nav.classList.toggle('navActive');
+      menu.classList.toggle('active');
+      
+    });
+  </script>
+</body>
+
+</html>
